@@ -1,0 +1,60 @@
+/* ###### table data ######## */
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+td, th {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.table_scroll{
+    width: 95%;
+    margin: 50px auto;
+    padding: 20px;
+    max-height:400px;
+    overflow:auto;
+}
+
+
+/* ######### pagination ######### */
+.pagination{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.rows{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.increase_decrease_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.limit{
+    border: none;
+    outline: none;
+}
+
+
+
+/* mobile responsive */
+@media only screen and (max-width: 500px){
+    .pagination{
+        gap: 20px;
+    }
+}
